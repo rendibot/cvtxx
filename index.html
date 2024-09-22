@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TXT to VCF Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>TXT to VCF Converter</h1>
+    
+    <h2>Convert TXT to VCF</h2>
+    <label>Pilih File TXT berisi nomor telepon:</label>
+    <input type="file" id="txtFile" accept=".txt">
+    
+    <button onclick="convertTxtToVcf()">Convert to VCF</button>
+
+    <h3>Hasil Konversi:</h3>
+    <textarea id="vcfOutput" placeholder="VCF content will appear here..."></textarea>
+    <button onclick="downloadVCF()">Download VCF</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
